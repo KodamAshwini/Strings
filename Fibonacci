@@ -1,0 +1,23 @@
+/*
+Fibonacci series in Java
+In fibonacci series, next number is the sum of previous two numbers for example 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 etc. 
+The first two numbers of fibonacci series are 0 and 1.*/
+import java.util.Scanner;
+class Fibonacci1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of series count:");
+		int count=sc.nextInt();
+		int a=0,b=1,sum=0;
+		while(count!=0){
+			System.out.print(sum+" ");
+			a=b;
+			b=sum;
+			sum=a+b;
+			count--;
+		}
+		System.out.println();
+	}
+}
